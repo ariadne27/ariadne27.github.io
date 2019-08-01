@@ -45,7 +45,7 @@ body {
 
 @media (max-width: 1000px) {
   .navbar-brand {
-    background-color: rgb(141, 31, 126);
+    background-color: rgb(74, 170, 165);
   }
   .column {
     width: 100%;
@@ -54,7 +54,7 @@ body {
     height: 800px;
   }
   .box-2 {
-    height: 400px;
+    height: 200px;
   }
   .box h1 {
     font-size:15pt;
