@@ -48,10 +48,11 @@ body {
   .column {
     width: 100%;
   }
-  .box box-1 {
+  .box {
     height: 800px;
+    font-size: 15pt
   }
-  .box box-2 {
+  .box-2 {
     height: 400px;
   }
   .box-1 img {
