@@ -44,6 +44,9 @@ body {
 }
 
 @media (max-width: 600px) {
+  .navbar-brand {
+    background-color: rgb(141, 31, 126);
+  }
   .column {
     width: 100%;
   }
