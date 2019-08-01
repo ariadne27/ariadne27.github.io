@@ -48,15 +48,18 @@ body {
   .column {
     width: 100%;
   }
-  .box {
-    height: 1000px;
+  .box-1 {
+    height: 800px;
+  }
+  .box-2 {
+    height: 400px;
   }
   .box-1 img {
     width:150px;
     height:150px;
   }
   .box-2 img {
-    width:100px;
-    height:100px;
+    width:75px;
+    height:75px;
   }
 }
