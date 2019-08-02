@@ -3,6 +3,9 @@
   font-size: 25pt; 
   font-weight: bolder
 }
+.nav-item {
+  text-align: left;
+}
 .box {
   height: 800px;
   padding: 10px;
@@ -43,13 +46,17 @@ body {
   color: rgb(250, 250, 250)
 }
 
+
 @media (max-width: 1000px) {
   .navbar-brand {
     background-color: rgb(74, 170, 165);
+    text-align: left;
+    width: 75%;
   }
   .column {
     width: 100%;
   }
+
   .box {
     height: 800px;
   }
