@@ -1,3 +1,4 @@
+/* Navbar styling */
 .navbar-brand {
   background-color: rgb(74, 170, 165);
   font-size: 25pt; 
@@ -6,6 +7,13 @@
 .nav-item {
   text-align: left;
 }
+
+/* Body color */
+body {
+  background-color:rgb(237, 237, 237);
+}
+
+/* box styling */
 .box {
   height: 800px;
   padding: 10px;
@@ -24,15 +32,22 @@
   width:225px;
   height:225px;
 }
+.box-3 {
+  height: 1200px;
+}
+
+.box-3 img {
+  width:500px;
+  height:500px;
+}
 .margin-top-80 {
   margin-top: 80px;
-}
-body {
-  background-color:rgb(237, 237, 237);
 }
 .box p {
   font-size: 16pt;
 }
+
+/* Footer styling */
 .container-fluid {
   background-color: rgb(74, 170, 165)
 }
@@ -45,23 +60,28 @@ body {
   background-color: rgb(102,102,102);
   color: rgb(250, 250, 250)
 }
-
-
+/* Small screen styling */
 @media (max-width: 1000px) {
+  /* Navbar small styling */
   .navbar-brand {
     background-color: rgb(74, 170, 165);
     text-align: left;
     width: 75%;
   }
+  /* Column width full-page */
   .column {
     width: 100%;
   }
-
+/* Set box heights and stylingeria */
   .box {
     height: 800px;
   }
   .box-2 {
     height: 200px;
+  }
+  .box-3 {
+    height: 2300px;
+    width: 600px;
   }
   .box h1 {
     font-size:15pt;
