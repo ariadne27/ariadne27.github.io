@@ -4,9 +4,14 @@
   font-size: 25pt; 
   font-weight: bolder
 }
+.navbar-nav {
+  text-align: right;
+}
+
 .nav-item {
   text-align: left;
 }
+
 
 /* Body color */
 body {
@@ -84,6 +89,9 @@ tr:nth-child(even) {
 /* Small screen styling */
 @media (max-width: 1200px) {
   /* Navbar small styling */
+  .nav {
+    background-color: rgb(74, 170, 165);
+  }
   .navbar-brand {
     background-color: rgb(74, 170, 165);
     text-align: left;
