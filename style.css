@@ -97,6 +97,10 @@ tr:nth-child(even) {
     text-align: left;
     width: 75%;
   }
+
+  .dropdown-toggle {
+    background-color: gray;
+  }
   /* Column width full-page */
   .column {
     width: 100%;
