@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>UFO Finder</title>
+  <title>MLB Pitcher Data</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -15,15 +15,15 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">UFO Sightings
-            <img class="nav-ufo" src="static/images/ufo.svg">
+          <a class="navbar-brand" href="index.html">MLB Pitcher Data
+            <!-- <img class="nav-ufo" src="static/images/ufo.svg"> -->
           </a>
         </div>
       </div>
     </nav>
     <div class="hero text-center">
-      <h1>Fox Mulder's UFO-Tracker</h1>
-      <p>The Truth is Out There</p>
+      <h1>MLB Pitcher Data 2019</h1>
+      <p>Refreshed 8/23/2019</p>
     </div>
     <div class="container">
       <div class="row margin-top-50">
@@ -49,15 +49,15 @@
                   <div class="form-group">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
-                        <label for="city">Enter a city</label>
-                        <input class="form-control" id="citylist" type="text" placeholder="benton">
+                        <label for="city">Enter a Player ID</label>
+                        <input class="form-control" id="citylist" type="text" placeholder="424144">
                       </li>
                     </ul>
                   </div>
-                  <button id="filter-btn city" type="button" class="btn btn-default">Filter by city</button>
+                  <button id="filter-btn city" type="button" class="btn btn-default">Filter by Player ID</button>
                 </form>
                 <!-- State -->
-                <form>
+                <!-- <form>
                   <div class="form-group">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
@@ -67,10 +67,10 @@
                     </ul>
                   </div>
                   <button id="filter-btn state" type="button" class="btn btn-default">Filter by state</button>
-                </form>
+                </form> -->
                 <!-- Country -->
                 <form>
-                  <div class="form-group">
+                  <!-- <div class="form-group">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
                         <label for="country">Enter a country</label>
@@ -79,10 +79,10 @@
                     </ul>
                   </div>
                   <button id="filter-btn country" type="button" class="btn btn-default">Filter by country</button>
-                </form>
+                </form> -->
                 <!-- Shape -->
                 <form>
-                  <div class="form-group">
+                  <!-- <div class="form-group">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
                         <label for="shape">Enter a shape</label>
@@ -91,7 +91,7 @@
                     </ul>
                   </div>
                   <button id="filter-btn shape" type="button" class="btn btn-default">Filter by shape</button>
-                </form>
+                </form> -->
               </div>
             </div>
           </aside>
@@ -101,13 +101,60 @@
             <table id="ufo-table" class="table table-striped">
               <thead>
                 <tr>
-                  <th class="table-head">Date</th>
-                  <th class="table-head">City</th>
-                  <th class="table-head">State</th>
-                  <th class="table-head">Country</th>
-                  <th class="table-head">Shape</th>
-                  <th class="table-head">Duration</th>
-                  <th class="table-head">Comments</th>
+                  <th class="table-head">player_id</th>
+                  <th class="table-head">game_id</td>
+                  <th class="table-head">season</td>
+                  <th class="table-head">date</td>
+                  <th class="table-head">is_win</td>
+                  <th class="table-head">team</td>
+                  <th class="table-head">opponent</td>
+                  <th class="table-head">is_home</td>
+                  <th class="table-head">ground_outs</td>
+                  <th class="table-head">runs</td>
+                  <th class="table-head">doubles</td>
+                  <th class="table-head">triples</td>
+                  <th class="table-head">home_runs</td>
+                  <th class="table-head">strike_outs</td>
+                  <th class="table-head">base_on_balls</td>
+                  <th class="table-head">intentional_walks</td>
+                  <th class="table-head">hits</td>
+                  <th class="table-head">avg</td>
+                  <th class="table-head">at_bats</td>
+                  <th class="table-head">caught_stealing</td>
+                  <th class="table-head">stolen_bases</td>
+                  <th class="table-head">stolen_base_percentage</td>
+                  <th class="table-head">ground_into_double_play</td>
+                  <th class="table-head">number_of_pitches</td>
+                  <th class="table-head">era</td>
+                  <th class="table-head">innings_pitched</td>
+                  <th class="table-head">wins</td>
+                  <th class="table-head">losses</td>
+                  <th class="table-head">saves</td>
+                  <th class="table-head">save_opportunities</td>
+                  <th class="table-head">holds</td>
+                  <th class="table-head">blown_saves</td>
+                  <th class="table-head">earned_runs</td>
+                  <th class="table-head">whip</td>
+                  <th class="table-head">batters_faced</td>
+                  <th class="table-head">outs</td>
+                  <th class="table-head">games_pitched</td>
+                  <th class="table-head">complete_games</td>
+                  <th class="table-head">shutouts</td>
+                  <th class="table-head">strikes</td>
+                  <th class="table-head">strike_percentage</td>
+                  <th class="table-head">hit_batsmen</td>
+                  <th class="table-head">balks</td>
+                  <th class="table-head">wild_pitches</td>
+                  <th class="table-head">pickoffs</td>
+                  <th class="table-head">air_outs</td>
+                  <th class="table-head">ground_outs_to_air_outs</td>
+                  <th class="table-head">runs_scored_per_9</td>
+                  <th class="table-head">home_runs_per_9</td>
+                  <th class="table-head">inherited_runners</td>
+                  <th class="table-head">inherited_runners_scored</td>
+                  <th class="table-head">catchers_interference</td>
+                  <th class="table-head">sac_bunts</td>
+                  <th class="table-head">sac_files</td>
                 </tr>
               </thead>
               <tbody>
